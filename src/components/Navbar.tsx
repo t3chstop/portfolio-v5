@@ -1,23 +1,39 @@
 import React from 'react'
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbSeparator,
+    Flex,
+    Heading,
+    Link,
+    Spacer,
+    Text,
+  } from '@chakra-ui/react'
 
-import { Box, Heading, Text, HStack, StackProps } from '@chakra-ui/react'
-
-export const ListItem = (props: StackProps) => {
-    const { children, ...rest } = props
-    return (
-        // eslint-disable-next-line
-        <Text as='li' color='white' {...rest}>{children}</Text>
-    )
-}
 
 export function Navbar() {
     return (
-        <HStack as='ul' pt='9' pl='20' fontSize='24px' spacing='6' listStyleType='none'>
-            <ListItem fontWeight='500'>Siddarth Calidas</ListItem>
-            <ListItem pl='57vw'>Home</ListItem>
-            <ListItem>My Work</ListItem>
-            <ListItem>Resume</ListItem>
-            <ListItem>Contact</ListItem>
-        </HStack>
+        <Flex alignContent='right' pt='9' pr='20' pl='20'>
+            <Link href='#' color='white' fontSize='2xl'>t3chstop.github.io</Link>
+            <Spacer />
+            <Breadcrumb separator='' fontSize='2xl' color='white'>
+                <BreadcrumbItem isCurrentPage>
+                    <BreadcrumbLink href='#'>Home</BreadcrumbLink>
+                </BreadcrumbItem>
+
+                <BreadcrumbItem>
+                    <BreadcrumbLink href='#'>My Work</BreadcrumbLink>
+                </BreadcrumbItem>
+
+                <BreadcrumbItem>
+                    <BreadcrumbLink href='#'>Resume</BreadcrumbLink>
+                </BreadcrumbItem>
+
+                <BreadcrumbItem>
+                    <BreadcrumbLink href='#'>Contact</BreadcrumbLink>
+                </BreadcrumbItem>
+            </Breadcrumb>
+        </Flex>
     )
 }

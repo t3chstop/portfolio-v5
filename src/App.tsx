@@ -1,12 +1,14 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, Flex, Spacer } from '@chakra-ui/react'
 import './App.css'
-import { Box, Flex, Text, Heading } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import { theme } from './Theme'
 import { Navbar } from './components/Navbar'
 import '@fontsource/montserrat/300.css'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/montserrat/700.css'
-import { Header } from './components/Header'
+import { Header,} from './components/Header'
+// import Particles from 'react-particles-js';
+
 
 function App() {
   document.title = "Siddarth Calidas | Web Developer"
