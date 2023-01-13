@@ -7,7 +7,8 @@ import '@fontsource/montserrat/300.css'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/montserrat/700.css'
 import { Header,} from './components/Header'
-// import Particles from 'react-particles-js';
+import { HeroBottom } from './components/HeroBottom'
+import { MyWork } from './components/MyWork'
 
 
 function App() {
@@ -16,9 +17,13 @@ function App() {
   return (
     <div className="App">
       <ChakraProvider theme={theme}>
-        <Box w='100vw' h='100vh' bgGradient='linear(to-b, blue.900, black)'>
+        <Box w='100vw' h='100vh' bgGradient='linear(0deg, rgba(0,0,0,1) 0%, rgba(9,6,28,1) 45%)'>
           <Navbar />
           <Header />
+          <HeroBottom />
+        </Box>
+        <Box w='100vw' h='100vh' bg='black'>.
+          <MyWork />
         </Box>
       </ChakraProvider>
         
