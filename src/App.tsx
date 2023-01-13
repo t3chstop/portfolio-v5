@@ -22,7 +22,7 @@ function App() {
           <Header />
           <HeroBottom />
         </Box>
-        <Box w='100vw' h='100vh' bg='black'>.
+        <Box w='100vw' h='100vh' bg='black'>
           <MyWork />
         </Box>
       </ChakraProvider>
