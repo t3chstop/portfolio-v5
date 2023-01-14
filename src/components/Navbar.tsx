@@ -20,11 +20,11 @@ import { HamburgerMenuIcon, RightArrowIcon } from '../icons/Icon'
 
 export function Navbar() {
     return (
-        <Box alignContent='right' pt='9' pr='20' pl={[0, 10, 20]} id='nav'>
+        <Box alignContent='right' pt='9'  pr='15' pl={[0, 10, 20]} id='nav'>
             <Flex display={{base: 'none', sm:'none', md:'none', lg:'flex'}} position='static'>
                 <Link href='#' color='white' fontSize='2xl'>t3chstop.github.io</Link>
                 <Spacer />
-                <Breadcrumb separator='' fontSize='2xl' color='white'>
+                <Breadcrumb separator='' fontSize='2xl' color='white' pr={[0, 10, 20]}>
                     <BreadcrumbItem isCurrentPage>
                         <BreadcrumbLink href='#'>Home</BreadcrumbLink>
                     </BreadcrumbItem>

@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <ChakraProvider theme={theme}>
-        <Box w='100vw' h='100vh' bgGradient='linear(0deg, rgba(0,0,0,1) 0%, rgba(9,6,28,1) 45%)'>
+        <Box  h='100vh' bgGradient='linear(0deg, rgba(0,0,0,1) 0%, rgba(9,6,28,1) 45%)'>
           <Navbar />
           <Header />
           <HeroBottom />
