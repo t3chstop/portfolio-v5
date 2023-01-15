@@ -21,10 +21,21 @@ import {
 
 import {FaGithub, FaReact, FaWordpress, FaElementor, FaYoast, FaPython, FaHtml5, FaFigma } from 'react-icons/fa'
 import {SiChakraui, SiTypescript, SiVite, SiDjango, SiCss3} from 'react-icons/si'
+import { motion } from "framer-motion"
 
 export function MyWork() {
     return (
-        <Box pt='24'>
+        <motion.div     
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, x: '0px', },
+              hidden: { opacity: 0,  x: '-400px' }
+            }}
+            >
+        <Box mt='24'>
             <Flex pt='9' pr='20' pl={[0, 10, 20]} id='myWork'>
                 <Spacer />
                     <Heading as='h2' color='blue.100' fontWeight='bold' fontSize='5xl'>My Work</Heading>
@@ -223,6 +234,6 @@ export function MyWork() {
                 <Spacer />
             </Flex>
         </Box>
-        
+        </motion.div>
     )
 }

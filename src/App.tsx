@@ -24,7 +24,7 @@ function App() {
           <Header />
           <HeroBottom />
         </Box>
-        <Box w='100vw' h='100%' bg='black'>
+        <Box pt='1vh' w='100vw' h='100%' bg='black'>
           <AboutMe />
           <MyWork />
           <Contact />

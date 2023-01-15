@@ -14,32 +14,14 @@ import { motion } from "framer-motion"
 export function AboutMe() {
     return (
         <motion.div     
-            // initial="hidden"
-            // whileInView="visible"
-            // variants={{
-            //     visible: { x: 0, opacity: 1 },
-            //     hidden: { x: -400, opacity: 0 }
-            //   }}
-            
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 2 }}
             variants={{
-                // visible: { , scale: 1 },
-                // hidden: { visibility: 'hidden', scale: 0 }
-              visible: { visibility: 'visible', x: '0px', },
-              hidden: { visibility: 'hidden',  x: '-400px' }
-            }}
-
-            // initial={{opacity: 0}}
-            // whileInView={{ opacity: 1}}
-            // transition={{ duration: 3 }}
-            // viewport={{ once: true }}
-
-            // initial={{ opacity: 0 }}
-            // whileInView={{ opacity: 1 }}
-            // viewport={{ once: true }}
+            visible: { opacity: 1, x: '0px', },
+            hidden: { opacity: 0,  x: '-400px' }
+        }}
             >
             <Box alignContent='right' id='about' w='full'>
                 <Flex pt='9' pr={['8', '8', '36']} pl={['8', '8', '36']}>

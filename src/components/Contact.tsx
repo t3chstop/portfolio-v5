@@ -10,9 +10,21 @@ import {
   } from '@chakra-ui/react'
 
 import { HamburgerMenuIcon, RightArrowIcon } from '../icons/Icon'
+import { motion } from "framer-motion"
+
 
 export function Contact() {
     return (
+        <motion.div     
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 2 }}
+        variants={{
+        visible: { opacity: 1, x: '0px', },
+        hidden: { opacity: 0,  x: '-400px' }
+        }}
+        >
         <Box alignContent='right' id='about'>
             <Flex pt='9' pr={['8', '8', '36']} pl={['8', '8', '36']}>
                 <Spacer />
@@ -26,6 +38,6 @@ export function Contact() {
                 <Spacer />
             </Flex>
         </Box>
-        
+        </motion.div>
     )
 }
