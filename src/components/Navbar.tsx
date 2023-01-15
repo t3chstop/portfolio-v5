@@ -17,9 +17,14 @@ import {
   } from '@chakra-ui/react'
 
 import { HamburgerMenuIcon, RightArrowIcon } from '../icons/Icon'
+import { motion } from "framer-motion"
 
 export function Navbar() {
     return (
+        <motion.div     
+            initial={{ opacity: 0, }}
+            animate={{ opacity: 1, }}
+            transition={{ duration: 1 }}>
         <Box alignContent='right' pt='9'  pr='15' pl={[0, 10, 20]} id='nav'>
             <Flex display={{base: 'none', sm:'none', md:'none', lg:'flex'}} position='static'>
                 <Link href='#' color='white' fontSize='2xl'>t3chstop.github.io</Link>
@@ -64,6 +69,7 @@ export function Navbar() {
                 </Menu>
             </Flex>
         </Box>
+        </motion.div>
         
     )
 }

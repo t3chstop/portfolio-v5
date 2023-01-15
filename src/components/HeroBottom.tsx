@@ -11,6 +11,7 @@ import {
     StackProps,
   } from '@chakra-ui/react'
 import { RightArrowIcon } from '../icons/Icon'
+import { motion } from "framer-motion"
 
 interface FeatureProps extends StackProps {
     icon: ElementType
@@ -19,14 +20,19 @@ interface FeatureProps extends StackProps {
 function Label(props: FeatureProps) {
     const {icon, children, ...rest} = props
     return (
-        <HStack {...rest} spacing='24px'>
-            <Link href='#' textDecoration='underline'>
-                <Text fontWeight='normal' textAlign='left' color='blue.400' fontSize='32px'>{children}</Text>
-            </Link>
-            <Link href='#'>
-                <Icon as={icon} boxSize='48px' textDecoration='underline'/>
-            </Link>
-        </HStack>
+        <motion.div     
+            initial={{ opacity: 0, }}
+            animate={{ opacity: 1, }}
+            transition={{ duration: 1 }}>
+            <HStack {...rest} spacing='24px'>
+                <Link href='#' textDecoration='underline'>
+                    <Text fontWeight='normal' textAlign='left' color='blue.400' fontSize='32px'>{children}</Text>
+                </Link>
+                <Link href='#'>
+                    <Icon as={icon} boxSize='48px' textDecoration='underline'/>
+                </Link>
+            </HStack>
+        </motion.div>
     )
 }
 

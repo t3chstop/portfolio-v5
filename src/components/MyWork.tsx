@@ -32,7 +32,7 @@ export function MyWork() {
             </Flex>
             {/* Portfolio Website Card */}
             <Flex pl={[0, 10, 20]} pr={[0, 10, 20]}>
-                <Hide above='md'>
+                <Hide above='sm'>
                     <Spacer />
                 </Hide>
                 <Card
