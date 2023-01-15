@@ -9,7 +9,7 @@ import '@fontsource/montserrat/700.css'
 import { Header,} from './components/Header'
 import { HeroBottom } from './components/HeroBottom'
 import { MyWork } from './components/MyWork'
-
+import { AboutMe } from './components/AboutMe'
 
 function App() {
   document.title = "Siddarth Calidas | Web Developer"
@@ -23,6 +23,7 @@ function App() {
           <HeroBottom />
         </Box>
         <Box w='100vw' h='100%' bg='black'>
+          <AboutMe />
           <MyWork />
         </Box>
       </ChakraProvider>

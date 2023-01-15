@@ -24,10 +24,10 @@ import {SiChakraui, SiTypescript, SiVite, SiDjango, SiCss3} from 'react-icons/si
 
 export function MyWork() {
     return (
-        <Box>
+        <Box pt='24'>
             <Flex pt='9' pr='20' pl={[0, 10, 20]} id='myWork'>
                 <Spacer />
-                    <Heading as='h2' color='blue.400' fontWeight='bold' fontSize='5xl'>My Work</Heading>
+                    <Heading as='h2' color='blue.100' fontWeight='bold' fontSize='5xl'>My Work</Heading>
                 <Spacer />
             </Flex>
             {/* Portfolio Website Card */}

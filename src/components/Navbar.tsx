@@ -30,6 +30,10 @@ export function Navbar() {
                     </BreadcrumbItem>
 
                     <BreadcrumbItem>
+                        <BreadcrumbLink href='#'>About Me</BreadcrumbLink>
+                    </BreadcrumbItem>
+
+                    <BreadcrumbItem>
                         <BreadcrumbLink href='#'>My Work</BreadcrumbLink>
                     </BreadcrumbItem>
 
